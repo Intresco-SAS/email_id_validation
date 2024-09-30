@@ -18,21 +18,21 @@
 #
 ##############################################################################
 {
-    'name': "Email Validation for Partner and Employee",
+    'name': "Email Verification for Partner and Employee",
+    'version': '14.0.1.0.0',
+    'category': 'Discuss',
     'summary': """Check Whether A Given E-mail ID Is Valid Or Not""",
     'description': """Check Whether A Given E-mail ID Is Valid Or Not In 
-    Partner And Employee Form""",
-    'version': '15.0.1.0.0',
+        Partner And Employee Form""",
     'author': "Cybrosys Techno Solutions",
     'company': "Cybrosys Techno Solutions",
     'maintainer': 'Cybrosys Techno Solutions',
     'website': "https://www.cybrosys.com",
-    'category': 'Discuss',
-    'depends': ['base', 'hr', 'contacts'],
+    'depends': ['hr', 'contacts'],
+    'external_dependencies': {'python': ['validate_email', 'py3DNS']},
     'images': ['static/description/banner.png'],
     'license': 'AGPL-3',
     'installable': True,
     'auto_install': False,
-    'external_dependencies': {'python': ['validate_email', 'py3DNS']},
     'application': False,
 }
